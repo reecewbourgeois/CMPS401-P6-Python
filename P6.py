@@ -1,12 +1,15 @@
 from zipfile import ZipFile
+import sys
 
+# Name of zip file passed as a command line argument
+zipFileName = sys.argv[1]
 # Array of names iterated through
 names = []
 # Array of duplicate names
 duplicates = []
 
 # Open namelists.zip without extracting it
-with ZipFile('namelists.zip','r') as zip:
+with ZipFile(zipFileName,'r') as zip:
     # For each file in the zipped archive
     for file in zip.namelist():
         # Open the text file
