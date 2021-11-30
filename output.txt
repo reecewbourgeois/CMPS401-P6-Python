@@ -1,6 +1,3 @@
-rachel
-robert
 william
+rachel
 tom
-jane
-sam
